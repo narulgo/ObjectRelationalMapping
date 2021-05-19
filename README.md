@@ -29,6 +29,7 @@ programmer1.languages.add(python)
 programmer2.languages.add(ruby)
 
 Programmer.objects.filter(languages=ruby)
+
 Programmer.objects.filter(languages=python)
 
 Programmer.objects.filter(languages=python) | Programmer.objects.filter(name__icontains='Name2')
