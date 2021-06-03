@@ -39,3 +39,14 @@ Programmer.objects.filter(name__icontains='Name2').update(name='Name1')
 Programmer.objects.filter(name__icontains='Name')
 
 
+Language.objects.all().count()
+Language.objects.filter(name__exact="Python")
+
+Programmer.objects.filter(age__gte=25)
+Programmer.objects.exclude(age__lte=25)
+
+Programmer.objects.filter(name__in=['Name'])
+
+Programmer.objects.filter(name__startswith='N')
+Programmer.objects.filter(name__endswith='e')
+
